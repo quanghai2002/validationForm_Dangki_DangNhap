@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xử lý form</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="" method="POST" class="form" id="form-1">
+        <h3 class="heading">Thành viên đăng ký</h3>
+        <p class="desc">Chào mừng đến với Hải Bánh</p>
+
+        <div class="spacer"></div>
+
+        <div class="form-group">
+          <label for="fullname" class="form-label">Tên đầy đủ</label>
+          <input id="fullname" name="fullname" type="text" placeholder="VD: Quang Hải" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+          <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <!-- input type: radio, checkbox -->
+
+        <!-- <div class="form-group">
+          <label for="password_confirmation" class="form-label">chọn giới tính</label>
+          <div><input name="gender" type="radio" value="male" class="form-control" />Nam</div>
+          <div><input name="gender" type="radio" value="female" class="form-control" />Nữ</div>
+          <div><input name="gender" type="radio" value="other" class="form-control" />Khác</div>
+
+          <span class="form-message"></span>
+        </div> -->
+
+        <!-- input type: file -->
+
+        <!-- <div class="form-group">
+          <label for="password_confirmation" class="form-label">ảnh đại diện</label>
+          <input id="avatar" name="avatar" type="file" class="form-control" />
+          <span class="form-message"></span>
+        </div> -->
+
+        <button class="form-submit">Đăng ký</button>
+      </form>
+
+      <!--form đăng nhập  -->
+
+      <form action="" method="POST" class="form" id="form-2">
+        <h3 class="heading">Đăng Nhập</h3>
+        <p class="desc">Chào mừng đến với Hải Bánh</p>
+
+        <div class="spacer"></div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email1" name="email" type="text" placeholder="VD: email@domain.com" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password1" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" />
+          <span class="form-message"></span>
+        </div>
+
+        <!-- input type: radio, checkbox -->
+
+        <!-- <div class="form-group">
+          <label for="password_confirmation" class="form-label">chọn giới tính</label>
+          <div><input name="gender" type="radio" value="male" class="form-control" />Nam</div>
+          <div><input name="gender" type="radio" value="female" class="form-control" />Nữ</div>
+          <div><input name="gender" type="radio" value="other" class="form-control" />Khác</div>
+
+          <span class="form-message"></span>
+        </div> -->
+
+        <!-- input type: file -->
+
+        <!-- <div class="form-group">
+          <label for="password_confirmation" class="form-label">ảnh đại diện</label>
+          <input id="avatar" name="avatar" type="file" class="form-control" />
+          <span class="form-message"></span>
+        </div> -->
+
+        <button class="form-submit">Đăng Nhập</button>
+      </form>
+    </div>
+    <script src="./validation.js"></script>
+  </body>
+</html>
